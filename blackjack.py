@@ -62,7 +62,7 @@ def blackjack():
             should_play = False
 
     while player_score < 21:
-        continue_answer = input("Type 'y' to get another card, type 'n' to pass")
+        continue_answer = input("Type 'y' to get another card, type 'n' to pass   ")
         if continue_answer == "y":
             new_card_player = random.choice(list(deal_card))
             player_hand.append(new_card_player)
@@ -110,11 +110,11 @@ def blackjack():
 
 
 while True:
-    play_game = input("Do you want to play a game of Black Jack? Type 'y' or 'n': ")
+    play_game = input("Do you want to play a game of Black Jack? Type 'y' or 'n':   ")
     if play_game.lower() == "n":
         print("Thanks for playing! Goodbye!")
         break  
     elif play_game.lower() == "y":
         blackjack()  
     else:
-        print("Invalid input. Please enter 'y' or 'n'.")  
+        print("Invalid input. Please enter 'y' or 'n'.   ")  
